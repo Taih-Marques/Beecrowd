@@ -156,13 +156,13 @@ class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        File saida = new File("saida");
-        Files.deleteIfExists(saida.toPath());
-        BufferedWriter writer = new BufferedWriter(new FileWriter("saida"));
+        // File saida = new File("saida");
+        // Files.deleteIfExists(saida.toPath());
+        // BufferedWriter writer = new BufferedWriter(new FileWriter("saida"));
 
-        File entrada = new File("entrada");
-        Scanner scanner = new Scanner(entrada);
-        // Scanner scanner = new Scanner(System.in);
+        // File entrada = new File("entrada");
+        // Scanner scanner = new Scanner(entrada);
+        Scanner scanner = new Scanner(System.in);
 
         int T = scanner.nextInt(); // Número de casos de teste
 
@@ -202,12 +202,12 @@ class Main {
             } else {
                 System.out.println(String.valueOf(resultado.passos));
 
-                writer.append("Case " + testCase + "\n");
-                imprimePassos(writer, resultado, N);
+                // writer.append("Case " + testCase + "\n");
+                // imprimePassos(writer, resultado, N);
             }
         }
 
-        writer.close();
+        // writer.close();
         scanner.close();
     }
 }
